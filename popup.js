@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   p.then(function(data) {
     console.log(data);
-    var newURL = "localhost:3000/" + data;
+    var newURL = "localhost:3000/review/" + data;
     chrome.tabs.create({ url: newURL });
   	/* do something with the result */
   }).catch(function(error) {
